@@ -4,7 +4,7 @@ package course;
 
 public class Course {
     
-    private char name;
+    public char name;
     private int numberOfClasses;
     
     public Course(char name, int numberOfClasses){
