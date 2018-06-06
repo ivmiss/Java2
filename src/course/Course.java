@@ -4,24 +4,29 @@ package course;
 
 public class Course {
     
-    public char name;
+    public String courseName;
     private int numberOfClasses;
     
-    public Course(char name, int numberOfClasses){
-        this.name = name;
+    public Course(){
+        this.courseName = "QA";
+        this.numberOfClasses = 2;
+    }
+    
+    public Course(String name, int numberOfClasses){
+        this.courseName = name;
         this.numberOfClasses = numberOfClasses;
     }
     
-    public void setName(char name){
-        this.name = name;
+    public void setCourseName(String name){
+        this.courseName = name;
     }
     
     public void setNumberOfClasses(int numberOfClasses){
         this.numberOfClasses = numberOfClasses;
     }
     
-    public char getName(){
-        return this.name;
+    public String getCourseName(){
+        return this.courseName;
     }
     
     public int getNumberOfClasses(){

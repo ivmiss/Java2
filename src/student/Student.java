@@ -15,6 +15,10 @@ public class Student {
     private Course course;
     private Computer computer;
     
+    public Student(){
+        this.course = new Course();
+        this.computer = new Computer();
+    }
     public Student(String firstName, String lastName, int yearOfBirth){
         
         this.firstName = firstName;
@@ -22,6 +26,9 @@ public class Student {
         this.yearOfBirth = yearOfBirth;
     }
     
+    public Course getCourse() {
+        return course;
+    }
     
     public void setFirstName(String firstName){
         this.firstName = firstName;
@@ -51,6 +58,19 @@ public class Student {
         System.out.println("First name: " + getFirstName());
         System.out.println("Last name: " + getLastName());
         System.out.println("Year of birth: " + getYearOfBirth());
+        System.out.println("Course name: " + );
+        
+        
+        String getCourseName = null;
+        System.out.println("Course name: " + getCourseName);
+        int getNumberOfClasses = 0;
+        System.out.println("Course number of classes: " + getNumberOfClasses);
+        double getProcessTact = 0.0;
+        System.out.println("Process tact: " + getProcessTact);
+        double getMemory = 0.0;
+        System.out.println("Memory: " + getMemory);
+        int getHardDrive = 0;
+        System.out.println("Hard drive: " + getHardDrive);
     }
     
     public Course getCourse(){

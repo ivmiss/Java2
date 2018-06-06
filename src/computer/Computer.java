@@ -4,21 +4,27 @@ package computer;
 
 public class Computer {
     
-    private float processTact;
-    private float memory;
+    private double processTact;
+    private double memory;
     private int hardDrive;
     
-    public Computer(float processTact, float memory, int hardDrive){
+    public Computer(){
+        this.processTact = 2.4;
+        this.memory = 16.0;
+        this.hardDrive = 500;
+    }
+    
+    public Computer(double processTact, double memory, int hardDrive){
         this.processTact = processTact;
         this.memory = memory;
         this.hardDrive = hardDrive;
     }
     
-    public void setProcessTact(float processTact){
+    public void setProcessTact(double processTact){
         this.processTact = processTact;
     }
     
-    public void setMemory(float memory){
+    public void setMemory(double memory){
         this.memory = memory;
     }
     
@@ -26,11 +32,11 @@ public class Computer {
         this.hardDrive = hardDrive;
     }
     
-    public float getProcessTact(){
+    public double getProcessTact(){
         return this.processTact;
     }
     
-    public float getMemory(){
+    public double getMemory(){
         return this.memory;
     }
     
