@@ -4,7 +4,7 @@ package course;
 
 public class Course {
     
-    public String courseName;
+    private String courseName;
     private int numberOfClasses;
     
     public Course(){

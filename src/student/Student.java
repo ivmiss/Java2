@@ -30,6 +30,10 @@ public class Student {
         return course;
     }
     
+    public Computer getComputer(){
+        return this.computer;
+    }
+    
     public void setFirstName(String firstName){
         this.firstName = firstName;
     }
@@ -58,27 +62,17 @@ public class Student {
         System.out.println("First name: " + getFirstName());
         System.out.println("Last name: " + getLastName());
         System.out.println("Year of birth: " + getYearOfBirth());
-        System.out.println("Course name: " + );
+        System.out.println("Course name: " + getCourse().getCourseName());
+        System.out.println("Course number of classes: " + getCourse().getNumberOfClasses());
+        System.out.println("Process tact: " + getComputer().getProcessTact());
+        System.out.println("Memory: " + getComputer().getMemory());
+        System.out.println("Hard drive: " + getComputer().getHardDrive());
         
-        
-        String getCourseName = null;
-        System.out.println("Course name: " + getCourseName);
-        int getNumberOfClasses = 0;
-        System.out.println("Course number of classes: " + getNumberOfClasses);
-        double getProcessTact = 0.0;
-        System.out.println("Process tact: " + getProcessTact);
-        double getMemory = 0.0;
-        System.out.println("Memory: " + getMemory);
-        int getHardDrive = 0;
-        System.out.println("Hard drive: " + getHardDrive);
+
     }
     
-    public Course getCourse(){
-        return this.course;
-    }
+   
     
-    public Computer getComputer(){
-        return this.computer;
-    }
+    
 }
 
